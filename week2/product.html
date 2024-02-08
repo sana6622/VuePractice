@@ -77,7 +77,7 @@
                         </div>
                         <!--多圖片-->
                         <template v-if="tempProduct?.imageUrl?.length">
-                            <img :src="img" alt="" class="images m-2" v-for="img in tempProduct?.imgagesUrl">
+                            <img  v-for="img in tempProduct?.imagesUrl" :src="img" alt="" class="images m-2" >
                         </template>
                     </template>
                     <p class="text-secondary" v-else>請選擇一個商品查看</p>
